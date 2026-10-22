@@ -1,0 +1,161 @@
+
+.weather {
+  width: 380px;
+  max-width: 100%;
+  padding: 35px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2f80ed, #56ccf2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.search-bar input {
+  flex: 1;
+  min-width: 0;
+  height: 48px;
+  padding: 0 18px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background: #ebfffc;
+  color: #333;
+  font-size: 16px;
+}
+
+.search-bar button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #ebfffc;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar button:hover {
+  background: #d9f5f0;
+}
+
+.search-bar button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.search-bar button img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.weather-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+.temperature {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.location {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 8px 0 20px;
+}
+
+.weather-data {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.col img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.col p {
+  font-size: 18px;
+  margin: 0 0 5px;
+  font-weight: 500;
+}
+
+.col span {
+  font-size: 13px;
+}
+
+.status-message,
+.error-message {
+  text-align: center;
+  overflow-wrap: anywhere;
+  margin: 20px 0 0;
+}
+
+.error-message {
+  color: #fff3f3;
+  font-weight: 600;
+}
+
+@media (max-width: 420px) {
+  .weather {
+    padding: 24px 18px;
+  }
+
+  .temperature {
+    font-size: 54px;
+  }
+
+  .weather-data {
+    gap: 10px;
+  }
+
+  .col {
+    gap: 6px;
+  }
+
+  .col img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .col p {
+    font-size: 15px;
+  }
+
+  .col span {
+    font-size: 12px;
+  }
+}
+
