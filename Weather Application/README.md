@@ -62,8 +62,6 @@ This application uses the OpenWeatherMap Current Weather API.
 
 Get an API key from [OpenWeatherMap](https://openweathermap.org/api).
 
-**Important:** Never commit your `.env` file or expose your API key in a public repository.
-
 ## 📂 Project Structure
 
 ```text
